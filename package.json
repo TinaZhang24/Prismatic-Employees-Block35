@@ -4,8 +4,20 @@
   "description": "You've done a great job building an employee-management API with placeholder data. Now you can be trusted to set up a real database!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon":"^3.1.7",
+    "prisma": "^5.20.0"
+  },
+  "prisma":{
+    "seed":"node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client":"^5.20.0",
+    "express":"^4.21.1"
+  }
 }
